@@ -1,2 +1,2 @@
 # vue3-training
-Project use to play around Vue3 Framework 
+Project uses to play around Vue3 Framework 
