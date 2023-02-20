@@ -1,0 +1,9 @@
+- name: Create .env file
+  # You may pin to the exact commit or the version.
+  # uses: SpicyPizza/create-envfile@a8e32e193370fc80ac4d090ac674b4ae101dc97d
+  uses: SpicyPizza/create-envfile@v1.3.0
+  with:
+    # The filename for the envfile
+    file_name: # optional, default is .env
+    # The directory to put the envfile in
+    directory: # optional, default is 
