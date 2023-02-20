@@ -1,9 +1,9 @@
 <script setup lang="ts">
-import TheWelcome from "../components/TheWelcome.vue";
+import UnderConstruction from "@/components/Organisms/UnderConstruction/UnderConstruction.vue";
 </script>
 
 <template>
   <main>
-    <TheWelcome />
+    <UnderConstruction />
   </main>
 </template>
