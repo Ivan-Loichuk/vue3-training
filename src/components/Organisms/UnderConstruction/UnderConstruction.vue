@@ -14,7 +14,7 @@
       >
         Strona w przygotowaniu
       </h1>
-      <ProgressBar value="80" copy="Jeszcze chwilka" />
+      <ProgressBar :value="80" copy="Jeszcze chwilka" />
     </div>
 
     <div class="flex gap-10 w-full justify-center">

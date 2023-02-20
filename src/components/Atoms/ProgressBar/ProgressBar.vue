@@ -15,8 +15,8 @@
 import { computed } from "vue";
 
 interface Props {
-  value: Number;
-  copy: String;
+  value: number;
+  copy: string;
 }
 
 const props = defineProps<Props>();
