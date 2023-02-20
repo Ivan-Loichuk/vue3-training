@@ -10,7 +10,7 @@ jobs:
         with:
           # Specify the directory that the .env file should go in.
           # This defaults to the current directory (i.e. '.')
-          directory: ${{ github.workspace }}/
+          directory: /
           include_env_vars: true
         env:
           VITE_PAGE_DOMAIN: ${{ secrets.VITE_PAGE_DOMAIN }}
