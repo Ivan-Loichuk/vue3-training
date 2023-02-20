@@ -1,16 +1,16 @@
-name: Export ENV
+name: Create envfile
+
 on: [push]
+
 jobs:
-  export_env:
+
+  create-envfile:
+ 
     runs-on: ubuntu-latest
-    name: Create .env file
+ 
     steps:
-      - name: Create .env 🤫
-        uses: DeveloperRic/action-create-env@v1.0.2 # set this to the version of your choice
-        with:
-          # Specify the directory that the .env file should go in.
-          # This defaults to the current directory (i.e. '.')
-          directory: /
-          include_env_vars: true
-        env:
-          VITE_PAGE_DOMAIN: ${{ secrets.VITE_PAGE_DOMAIN }}
+    - name: ENVFILE
+      uses: alekangelov/secret-envfile@v1
+      with:
+        content: ${{ secrets.ENVFILE_DEV }}
+        filename: .env
