@@ -1,9 +1,13 @@
-- name: Create .env file
-  # You may pin to the exact commit or the version.
-  # uses: SpicyPizza/create-envfile@a8e32e193370fc80ac4d090ac674b4ae101dc97d
-  uses: SpicyPizza/create-envfile@v1.3.0
-  with:
-    # The filename for the envfile
-    file_name: # optional, default is .env
-    # The directory to put the envfile in
-    directory: # optional, default is 
+name: Export ENV
+on: [push]
+jobs:
+  export_env:
+    runs-on: ubuntu-latest
+    name: Testing the exported env
+    steps:
+      - name: Check Out Source Code
+        uses: actions/checkout@v2
+      - name: export env
+        uses: krisalay/export-env@v1.0.0
+        with:
+          filename: .env
