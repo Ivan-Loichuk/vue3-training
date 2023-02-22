@@ -1,5 +1,5 @@
 <template>
-  <div class="progress-element">
+  <div class="progress-element w-full max-w-5xl mx-auto">
     <p class="progress-label relative">{{ copy }}</p>
     <div
       class="progress-container relative w-full overflow-hidden rounded-sm h-3 bg-gray-600 before:bg-gray-200 before:absolute before:top-0 before:left:0 before:h-full"
