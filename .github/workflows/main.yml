@@ -1,0 +1,16 @@
+name: Create envfile
+
+on: [push]
+
+jobs:
+
+  create-envfile:
+ 
+    runs-on: ubuntu-latest
+ 
+    steps:
+    - name: ENVFILE
+      uses: alekangelov/secret-envfile@v1
+      with:
+        content: ${{ secrets.ENVFILE_DEV }}
+        filename: .env
